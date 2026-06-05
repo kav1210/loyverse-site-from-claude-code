@@ -6,7 +6,7 @@
   <title>Loyverse — The POS system that powers your whole business</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -57,18 +57,17 @@
 
   <!-- ===================== HERO ===================== -->
   <section class="hero">
-    <div class="hero-inner">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-text-wrap">
       <div class="hero-text">
         <h1 class="hero-h1">The POS system that powers your whole business</h1>
         <p class="hero-sub">Take payments, monitor your sales in real time, manage inventory, and oversee your team — all from one place.</p>
-        <a href="#" class="btn btn-primary btn-large">Start for free</a>
+        <a href="#" class="btn btn-hero">Start for free</a>
       </div>
-      <div class="hero-device">
-        <img class="hero-bg-img" src="images/hero-bg.png" alt="">
-        <img class="hero-shadow" src="images/phone-shadow.png" alt="">
-        <img class="hero-phone" src="images/galaxy-phone.png" alt="Loyverse POS on phone">
-        <img class="hero-screen" src="images/phone-screen.png" alt="Loyverse app interface">
-      </div>
+    </div>
+    <div class="hero-counter-wrap">
+      <img class="hero-counter" src="images/hero-counter.png" alt="Loyverse POS counter">
     </div>
   </section>
 
@@ -81,17 +80,15 @@
         <p class="body-2">From first sale to repeat customer, Loyverse helps businesses thrive.</p>
       </div>
 
-      <!-- World Map -->
       <div class="map-container">
-        <img class="map-piece" style="left:265.56px;top:411.69px;width:212px;height:283px" src="images/map-1.svg" alt="">
-        <img class="map-piece" style="left:0;top:0;width:566px;height:432px" src="images/map-2.svg" alt="">
-        <img class="map-piece" style="left:993.41px;top:462.95px;width:247px;height:258px" src="images/map-3.svg" alt="">
-        <img class="map-piece" style="left:502.99px;top:316.91px;width:327px;height:364px" src="images/map-4.svg" alt="">
-        <img class="map-piece" style="left:494.93px;top:12.52px;width:651px;height:314px" src="images/map-5.svg" alt="">
-        <img class="map-piece" style="left:679.41px;top:215.77px;width:438px;height:284px" src="images/map-6.svg" alt="">
+        <img class="map-piece" style="left:21.42%;top:57.10%;width:17.10%;height:39.25%" src="images/map-1.svg" alt="">
+        <img class="map-piece" style="left:0;top:0;width:45.65%;height:59.92%" src="images/map-2.svg" alt="">
+        <img class="map-piece" style="left:80.11%;top:64.21%;width:19.92%;height:35.78%" src="images/map-3.svg" alt="">
+        <img class="map-piece" style="left:40.56%;top:43.95%;width:26.37%;height:50.49%" src="images/map-4.svg" alt="">
+        <img class="map-piece" style="left:39.91%;top:1.74%;width:52.50%;height:43.55%" src="images/map-5.svg" alt="">
+        <img class="map-piece" style="left:54.79%;top:29.93%;width:35.32%;height:39.39%" src="images/map-6.svg" alt="">
       </div>
 
-      <!-- Proof bar -->
       <div class="proof-review-wrap">
         <div class="proof-bar">
           <div class="stat-item">
@@ -112,7 +109,6 @@
           </div>
         </div>
 
-        <!-- Review bar -->
         <div class="review-bar">
           <div class="review-item">
             <img src="images/capterra.svg" alt="Capterra" class="review-logo">
@@ -171,12 +167,11 @@
         <h2 class="h2">Built to run every part of your business</h2>
       </div>
 
-      <!-- Feature blocks -->
       <div class="features">
 
         <!-- 1. Point of sale: photo left, text right -->
         <div class="feature-row">
-          <div class="feature-photo feature-photo--left">
+          <div class="feature-photo">
             <img src="images/pos-photo.jpg" alt="Point of sale" class="feature-img">
           </div>
           <div class="feature-text">
@@ -194,7 +189,7 @@
         </div>
 
         <!-- 2. Payments: text left, photo right -->
-        <div class="feature-row feature-row--reversed">
+        <div class="feature-row feature-row--rev">
           <div class="feature-text">
             <h3 class="h3">Payments</h3>
             <p class="body-2">Payments built right into your POS — no separate app, no manual reconciliation.</p>
@@ -205,14 +200,14 @@
             </ul>
             <a href="#" class="feature-link">Explore Loyverse payments <img src="images/chevron-right.svg" alt="" class="link-chevron"></a>
           </div>
-          <div class="feature-photo feature-photo--right">
-            <img src="images/payments-photo.jpg" alt="Payments" class="feature-img" style="height:400px">
+          <div class="feature-photo">
+            <img src="images/payments-photo.jpg" alt="Payments" class="feature-img">
           </div>
         </div>
 
         <!-- 3. Inventory: photo left, text right -->
         <div class="feature-row">
-          <div class="feature-photo feature-photo--left">
+          <div class="feature-photo">
             <img src="images/inventory-photo.jpg" alt="Inventory management" class="feature-img">
           </div>
           <div class="feature-text">
@@ -230,7 +225,7 @@
         </div>
 
         <!-- 4. Sales analytics: text left, photo right -->
-        <div class="feature-row feature-row--reversed">
+        <div class="feature-row feature-row--rev">
           <div class="feature-text">
             <h3 class="h3">Sales analytics</h3>
             <p class="body-2">Access your reports from a smartphone, tablet or computer anytime, anywhere</p>
@@ -243,14 +238,14 @@
             </ul>
             <a href="#" class="feature-link">Explore Back Office <img src="images/chevron-right.svg" alt="" class="link-chevron"></a>
           </div>
-          <div class="feature-photo feature-photo--right">
+          <div class="feature-photo">
             <img src="images/analytics-photo.jpg" alt="Sales analytics" class="feature-img">
           </div>
         </div>
 
         <!-- 5. Employee management: photo left, text right -->
         <div class="feature-row">
-          <div class="feature-photo feature-photo--left">
+          <div class="feature-photo">
             <img src="images/employee-photo.jpg" alt="Employee management" class="feature-img">
           </div>
           <div class="feature-text">
@@ -266,7 +261,7 @@
         </div>
 
         <!-- 6. CRM: text left, photo right -->
-        <div class="feature-row feature-row--reversed">
+        <div class="feature-row feature-row--rev">
           <div class="feature-text">
             <h3 class="h3">CRM and customer loyalty</h3>
             <p class="body-2">Turn once-in-a-while shoppers into regulars</p>
@@ -278,14 +273,14 @@
             </ul>
             <a href="#" class="feature-link">Explore loyalty program <img src="images/chevron-right.svg" alt="" class="link-chevron"></a>
           </div>
-          <div class="feature-photo feature-photo--right">
+          <div class="feature-photo">
             <img src="images/crm-photo.jpg" alt="CRM and customer loyalty" class="feature-img">
           </div>
         </div>
 
         <!-- 7. Multi-store: photo left, text right -->
         <div class="feature-row">
-          <div class="feature-photo feature-photo--left">
+          <div class="feature-photo">
             <img src="images/multistore.png" alt="Multi-store management" class="feature-img">
           </div>
           <div class="feature-text">
@@ -315,17 +310,14 @@
         </div>
       </div>
       <div class="integrations-grid">
-        <!-- Row 1 -->
         <div class="int-tile"><img src="images/logo-xero.png" alt="Xero"></div>
         <div class="int-tile"><img src="images/logo-qb.svg" alt="QuickBooks"></div>
         <div class="int-tile"><img src="images/logo-shopify.png" alt="Shopify"></div>
         <div class="int-tile"><img src="images/logo-woo.svg" alt="WooCommerce"></div>
-        <!-- Row 2 -->
         <div class="int-tile"><img src="images/logo-mailchimp.svg" alt="Mailchimp"></div>
         <div class="int-tile"><img src="images/logo-zapier.png" alt="Zapier"></div>
         <div class="int-tile"><img src="images/logo-marello.svg" alt="Marello"></div>
         <div class="int-tile"><img src="images/logo-constant.svg" alt="Constant Contact"></div>
-        <!-- Row 3 -->
         <div class="int-tile"><img src="images/logo-bigcommerce.svg" alt="BigCommerce"></div>
         <div class="int-tile"><img src="images/logo-meta.png" alt="Meta"></div>
         <div class="int-tile"><img src="images/logo-square.png" alt="Square"></div>
@@ -340,7 +332,6 @@
       <div class="section-header section-header--center">
         <p class="label label--green">WHO IT'S FOR</p>
         <h2 class="h2">Made for businesses like yours</h2>
-        <p class="body-2">From a single café to a multi-location retail chain — Loyverse fits how you work.</p>
       </div>
       <div class="biz-cols">
         <div class="biz-col">
@@ -368,7 +359,6 @@
             <li>Convenience</li>
             <li>Liquor</li>
             <li>Fashion &amp; clothing</li>
-            <li>Pizzeria</li>
             <li>Jewelry</li>
             <li>Kiosk</li>
           </ul>
@@ -379,10 +369,10 @@
             <p class="biz-cat-name">Services</p>
           </div>
           <ul class="biz-list">
-            <li>Transportation</li>
             <li>Car wash</li>
             <li>Salon</li>
-            <li>Rentals</li>
+            <li>Fitness</li>
+            <li>Transportation</li>
             <li>Hotels</li>
           </ul>
         </div>
@@ -393,8 +383,8 @@
   <!-- ===================== CUSTOMER STORY ===================== -->
   <section class="customer-story">
     <div class="story-inner">
-      <div class="story-photo">
-        <img src="images/customer-story.jpg" alt="Dutch Language Cafe owner">
+      <div class="story-photo-wrap">
+        <img src="images/customer-story.jpg" alt="Dutch Language Cafe owner" class="story-photo-img">
       </div>
       <div class="story-body">
         <p class="story-label">CUSTOMER STORY</p>
@@ -465,14 +455,13 @@
   <section class="cta">
     <h2 class="cta-h2">Run your business with Loyverse</h2>
     <p class="cta-sub">Set up your POS in minutes. No credit card required.</p>
-    <a href="#" class="btn btn-primary btn-large">Get started free</a>
+    <a href="#" class="btn btn-primary btn-large">Start for free</a>
   </section>
 
   <!-- ===================== FOOTER ===================== -->
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-content">
-        <!-- Left: logo + description + social -->
         <div class="footer-brand">
           <div class="footer-info">
             <a href="#" class="footer-logo">
@@ -492,7 +481,6 @@
           </div>
         </div>
 
-        <!-- Right: link columns -->
         <div class="footer-cols">
           <div class="footer-col">
             <p class="footer-col-title">Products</p>
@@ -540,7 +528,6 @@
         </div>
       </div>
 
-      <!-- Legal bar -->
       <div class="footer-legal">
         <div class="footer-divider"></div>
         <div class="footer-legal-row">
