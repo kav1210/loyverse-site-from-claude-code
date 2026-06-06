@@ -31,8 +31,8 @@ img { display: block; max-width: 100%; }
 .h3 {
   font-family: 'General Sans', 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 41px;
+  line-height: 51px;
   color: rgba(0,0,0,0.87);
 }
 
@@ -460,7 +460,7 @@ img { display: block; max-width: 100%; }
   gap: 12px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 24px;
   color: #000;
 }
@@ -477,8 +477,8 @@ img { display: block; max-width: 100%; }
   align-items: center;
   gap: 8px;
   font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 17px;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 24px;
   color: #388e3c;
   cursor: pointer;
@@ -487,6 +487,17 @@ img { display: block; max-width: 100%; }
 .feature-link:hover { opacity: 0.8; }
 
 .link-chevron { width: 24px; height: 24px; object-fit: contain; display: inline-block; }
+
+/* Multi-store text-only centered row */
+.feature-row--solo {
+  justify-content: center;
+  flex-direction: row !important;
+}
+.feature-row--solo .feature-text {
+  flex: 0 0 550px;
+  width: 550px;
+  padding-top: 13px;
+}
 
 /* ============================================================
    INTEGRATIONS
@@ -524,8 +535,8 @@ img { display: block; max-width: 100%; }
 .h3-integrations {
   font-family: 'General Sans', 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 41px;
+  line-height: 51px;
   color: #000;
 }
 
@@ -549,6 +560,11 @@ img { display: block; max-width: 100%; }
 }
 
 .int-tile img { max-width: 80%; max-height: 80%; object-fit: contain; }
+
+.int-tile--dark {
+  background: #000;
+  border-color: #000;
+}
 
 /* ============================================================
    MADE FOR BUSINESSES
@@ -841,9 +857,44 @@ img { display: block; max-width: 100%; }
   color: rgba(255,255,255,0.7);
 }
 
+/* Language selector */
+.lang-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 8px;
+  padding: 7px 8px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.lang-globe {
+  width: 20px; height: 20px;
+  opacity: 0.7;
+  flex-shrink: 0;
+  filter: brightness(10);
+}
+
+.lang-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255,255,255,0.7);
+  white-space: nowrap;
+}
+
+.lang-arrow {
+  width: 20px; height: 20px;
+  opacity: 0.7;
+  flex-shrink: 0;
+  filter: brightness(10);
+}
+
 .footer-social {
   display: flex;
-  gap: 8px;
+  gap: 4px;
   align-items: center;
 }
 
@@ -877,29 +928,30 @@ img { display: block; max-width: 100%; }
 }
 
 .footer-col-title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  color: rgba(255,255,255,0.85);
-  line-height: 22px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 14px;
 }
 
 .footer-links {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
 }
 
 .footer-links li a {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: normal;
-  color: rgba(255,255,255,0.55);
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255,255,255,0.7);
   white-space: nowrap;
 }
-.footer-links li a:hover { color: rgba(255,255,255,0.9); }
+.footer-links li a:hover { color: rgba(255,255,255,0.95); }
 
 .footer-legal { display: flex; flex-direction: column; gap: 16px; }
 
@@ -974,7 +1026,7 @@ img { display: block; max-width: 100%; }
   .hero-h1        { font-size: 52px; line-height: 60px; }
   .h2             { font-size: 42px; line-height: 52px; }
   .faq-title, .cta-h2 { font-size: 42px; line-height: 52px; }
-  .h3, .h3-integrations { font-size: 32px; line-height: 44px; }
+  .h3, .h3-integrations { font-size: 36px; line-height: 48px; }
   .stat-num       { font-size: 40px; line-height: 50px; }
   .body-2         { font-size: 18px; line-height: 28px; }
 
@@ -992,7 +1044,7 @@ img { display: block; max-width: 100%; }
   .hero-h1        { font-size: 46px; line-height: 56px; }
   .h2             { font-size: 38px; line-height: 48px; }
   .faq-title, .cta-h2 { font-size: 38px; line-height: 48px; }
-  .h3, .h3-integrations { font-size: 28px; line-height: 38px; }
+  .h3, .h3-integrations { font-size: 32px; line-height: 42px; }
   .stat-num       { font-size: 36px; line-height: 46px; }
   .body-2         { font-size: 17px; line-height: 26px; }
 
@@ -1014,7 +1066,7 @@ img { display: block; max-width: 100%; }
   .hero-text      { width: 400px; gap: 18px; }
   .h2             { font-size: 34px; line-height: 44px; }
   .faq-title, .cta-h2 { font-size: 34px; line-height: 44px; }
-  .h3, .h3-integrations { font-size: 26px; line-height: 36px; }
+  .h3, .h3-integrations { font-size: 28px; line-height: 38px; }
   .stat-num       { font-size: 32px; line-height: 42px; }
   .body-2         { font-size: 16px; line-height: 24px; }
 
@@ -1181,7 +1233,7 @@ img { display: block; max-width: 100%; }
   .gmc { padding: 56px 0; }
   .h2  { font-size: 32px; line-height: 42px; }
   .faq-title, .cta-h2 { font-size: 32px; line-height: 42px; }
-  .h3, .h3-integrations { font-size: 24px; line-height: 34px; }
+  .h3, .h3-integrations { font-size: 26px; line-height: 36px; }
   .stat-num { font-size: 30px; line-height: 40px; }
   .body-2   { font-size: 16px; line-height: 24px; }
 
@@ -1201,11 +1253,12 @@ img { display: block; max-width: 100%; }
     max-width: 100%;
   }
 
-  /* Features: stack vertically, text first then photo */
+  /* Features: stack vertically, image always on top */
   .commerce-tools { padding: 56px 0; }
   .features       { gap: 56px; }
-  .feature-row,
-  .feature-row--rev { flex-direction: column; gap: 24px; }
+  .feature-row    { flex-direction: column; gap: 24px; }
+  .feature-row--rev { flex-direction: column-reverse; gap: 24px; }
+  .feature-row--solo { flex-direction: column !important; }
   .feature-photo  { width: 100%; flex: none; }
   .feature-img    { width: 100%; height: auto; aspect-ratio: 608/406; }
   .feature-text   { width: 100%; padding-top: 0; }
@@ -1304,7 +1357,7 @@ img { display: block; max-width: 100%; }
   /* Typography */
   .h2 { font-size: 28px; line-height: 38px; }
   .faq-title, .cta-h2 { font-size: 28px; line-height: 38px; }
-  .h3, .h3-integrations { font-size: 22px; line-height: 30px; }
+  .h3, .h3-integrations { font-size: 24px; line-height: 32px; }
   .stat-num { font-size: 28px; line-height: 36px; }
 
   /* Stats 2×2 */
@@ -1384,7 +1437,7 @@ img { display: block; max-width: 100%; }
   /* Typography */
   .h2  { font-size: 26px; line-height: 34px; }
   .faq-title, .cta-h2 { font-size: 26px; line-height: 34px; }
-  .h3, .h3-integrations { font-size: 20px; line-height: 28px; }
+  .h3, .h3-integrations { font-size: 22px; line-height: 30px; }
   .stat-num { font-size: 26px; line-height: 34px; }
   .body-2   { font-size: 16px; line-height: 24px; }
 
@@ -1433,7 +1486,7 @@ img { display: block; max-width: 100%; }
 
   .h2  { font-size: 24px; line-height: 32px; }
   .faq-title, .cta-h2 { font-size: 24px; line-height: 32px; }
-  .h3, .h3-integrations { font-size: 18px; line-height: 26px; }
+  .h3, .h3-integrations { font-size: 20px; line-height: 28px; }
   .stat-num { font-size: 24px; line-height: 32px; }
   .stat-label { font-size: 13px; }
 
