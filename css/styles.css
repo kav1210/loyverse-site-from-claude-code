@@ -422,10 +422,8 @@ img { display: block; max-width: 100%; }
   gap: 82px;
 }
 
-/* Reversed row: text left, photo right */
-.feature-row--rev {
-  flex-direction: row-reverse;
-}
+/* Reversed row: DOM order [text, photo] = text left, photo right — no override needed */
+.feature-row--rev {}
 
 .feature-photo {
   flex: 0 0 608px;
